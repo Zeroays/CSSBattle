@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay At Home</title>
+    <style>
+        body {
+            background: #6592CF;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+        }
+        .house__body {
+            position: absolute;
+            top: 130px;
+            background: #243D83;
+            width: 150px;
+            height: 120px;
+            border-radius: 10px;
+        }
+        .house__floor {
+            background: #EEB850;
+            width: 100px;
+            height: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 145px;
+        }
+        .house__door {
+            background: #EEB850;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px 10px 0 0;
+            position: absolute;
+            top: 200px;
+        }
+        .house__roof {
+            z-index: -1;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 100px solid #243D83;
+            position: absolute;
+            top: 50px;
+        }  
+    </style>
+</head>
+<body>
+    <div>
+        <div class="house__body"></div>
+        <div class="house__door"></div>
+        <div class="house__floor"></div>
+        <div class="house__roof"></div>
+    </div>
+</body>
+</html>

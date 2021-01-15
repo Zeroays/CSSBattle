@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wash Your Hands</title>
+    <style>
+    body {
+        background-color: #293462;
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        width: 200px;
+        border-radius: 20px;
+    }
+    .red {
+        background: #fe5f55;
+    }
+    .brown {
+        z-index: -1;
+        background: #A64942;
+        top: 36.5%;
+    }
+    .box-divot {
+        width: 140px;
+        height: 40px;
+        background-color: #a64942;
+        border-radius: 50px;
+    }
+    </style>
+</head>
+<body>
+    <div class="box red">
+        <div class="box-divot"></div>
+    </div>
+    <div class="box brown"></div>
+</body>
+</html>
