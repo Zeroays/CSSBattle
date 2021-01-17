@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunnel</title>
+
+    <style>
+        body {
+            background: #6592CF;
+            --box-size: 250px;
+        }
+        div, #bx-1, #bx-2 {
+            display: flex;
+                justify-content: center;
+            align-items: center;
+        }
+        div { height: 100%;}
+        #bx-1 {
+            width: var(--box-size);
+            height: var(--box-size);
+            background: #243D83;
+        }
+        #bx-2 {
+            width: calc(var(--box-size) * 0.6);
+            height: calc(var(--box-size) * 0.6);
+            background: #6592CF;
+            transform: rotate(15deg);
+        }
+        #bx-3 {
+            width: calc(var(--box-size) * 0.3);
+            height: calc(var(--box-size) * 0.3);
+            background: #243D83;
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="box blue" id="bx-1">
+            <div class="box light-blue" id="bx-2">
+                <div class="box blue" id="bx-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
