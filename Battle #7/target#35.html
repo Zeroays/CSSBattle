@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <style>
+        body {
+            background: #293462;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+        }
+        .ice-cream__body {
+            position: absolute;
+            top: 50px;
+            background: #FFF1C1;
+            width: 100px;
+            height: 150px;
+            border-radius: 50px 50px 20px 20px;
+        }
+        .ice-cream__popsicle {
+            position: absolute;
+            z-index: -1;
+            top: 180px;
+            width: 30px;
+            height: 70px;
+            background: #FE5F55;
+            border-radius: 10px;
+        }
+        .ice-cream__shadow {
+            position: absolute;
+            top: 200px;
+            width: 30px;
+            height: 10px;
+            background: #A64942;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="ice-cream__body"></div>
+        <div class="ice-cream__popsicle"></div>
+        <div class="ice-cream__shadow"></div>
+    </div>
+</body>
+</html>
