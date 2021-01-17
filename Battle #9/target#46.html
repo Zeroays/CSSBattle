@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <style>
+    body {
+        background: #293462;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .logo__circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: #FFF1C1;
+        position: relative;
+        overflow: hidden;
+    }
+    .logo__circle-mountain {
+        background: #FE5F55;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    #mn-tall {
+        width: 180px;
+        height: 180px;
+        top: 48%;
+        left: 25.3%;
+    }
+    #mn-short {
+        width: 50px;
+        height: 50px;
+        top: 70%;
+        left: 2%;
+    }
+    </style>
+</head>
+<body>
+    <div class="logo__circle">
+        <div class="logo__circle-mountain" id="mn-tall"></div>
+        <div class="logo__circle-mountain" id="mn-short"></div>
+    </div>
+</body>
+</html>
