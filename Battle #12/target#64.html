@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Knob</title>
+    <style>
+        body, .outer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            margin: 0;
+            background: #191919;
+            height: 100%;
+            width: 100%;
+        }
+        .outer {
+            width: 160px;
+            height: 160px;
+            background: #824B20;
+            border-radius: 50%;
+            position: relative;
+        }
+        .inner {
+            background: #E08027;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .curve {
+            position: absolute;
+            top: 80px;
+            background: #E08027;
+            width: 120px;
+            height: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            border: 20px solid #FFF58F;
+            border-top: 0;
+            box-sizing: border-box;
+        }
+        .half-circle__left, .half-circle__right {
+            position: absolute;
+            background: #FFF58F;
+            width: 20px;
+            height: 10px;
+            border-bottom: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .half-circle__left {
+            top: 70px;
+            left: 20px;
+        }
+        .half-circle__right {
+            top: 70px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="outer">
+            <div class="inner"></div>
+            <div class="curve"></div>
+            <div class="half-circle__left"></div>
+            <div class="half-circle__right"></div>
+        </div>
+    </div>
+</body>
+</html>
