@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley</title>
+    <style>
+        body {
+            background: #6592CF;
+        }
+        .eye__left, .eye__right, .mouth {
+            background: rgba(0, 0, 0, 0);
+            width: 80px;
+            height: 40px;
+            border: 20px solid #060F55;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom: 0;
+            position: absolute;
+        }
+        .eye__left {
+            top: 40px;
+            left: 40px;
+        }
+        .eye__right {
+            top: 40px;
+            left: 240px;
+        }
+        .mouth {
+            top: 200px;
+            left: 140px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="eye__left"></div>
+        <div class="eye__right"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
