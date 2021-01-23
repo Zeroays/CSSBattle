@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+           background: #0B2429;
+        }
+        .diamond {
+          background: #F3AC3C;
+          transform: translateY(105px) rotate(45deg);
+          width: 100px;
+          height: 100px;
+        }
+        .box__top-left {
+          background: #998235;
+          width: 70px;
+          height: 70px;
+          transform: translate(-20px, -50px) skew(0, -45deg);
+        }
+        .box__top-right {
+          background: #1A4341;
+          width: 70px;
+          height: 70px;
+          transform: translate(50px, -120px) skew(0, 45deg);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="diamond"></div>
+        <div class="box__top-left"></div>
+        <div class="box__top-right"></div>
+    </div>
+</body>
+</html>
