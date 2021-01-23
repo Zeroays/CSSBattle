@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windmill</title>
+    <style>
+        body {
+            background: #191919;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            width: 200px;
+            height: 150px;
+        }
+        .half-circle__top--blue, .half-circle__bottom--blue {
+            width: 100px;
+            height: 50px;
+            background: #4F77FF;
+            border-radius: 50px 50px 0 0;
+        }
+        .half-circle__top--blue {
+            transform: translateX(75px) rotate(90deg) ;
+        }
+        .half-circle__bottom--blue {
+            transform: translate(25px, 50px) rotate(-90deg);
+        }
+        .half-circle__left--yellow,  .half-circle__right--yellow {
+            width: 100px;
+            height: 50px;
+            background: #F9E492;
+            border-radius: 50px 50px 0 0;
+        }
+        .half-circle__left--yellow {
+            transform: translateY(-75px);
+        }
+        .half-circle__right--yellow {
+            transform: translate(100px, -75px) rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="half-circle__top--blue"></div>
+        <div class="half-circle__bottom--blue"></div>
+        <div class="half-circle__left--yellow"></div>
+        <div class="half-circle__right--yellow"></div>
+    </div>
+</body>
+</html>
