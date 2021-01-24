@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffocate</title>
+      <style>
+        body {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .box {
+          width: 200px;
+          height: 200px;
+          background: #1A4341;
+        }
+        .box--top-left, .box--top-right, .box--bottom-left, .box--bottom-right {
+          background: #F3AC3C;
+          width: 200px;
+          height: 150px;
+          position: absolute;
+        }
+        .box--top-left {
+          top: 0px;
+          left: 0px;
+          border-bottom-right-radius: 100px;
+        }
+        .box--top-right {
+          top: 0px;
+          right: 0px;
+          border-bottom-left-radius: 100px;
+        }
+        .box--bottom-left {
+          bottom: 0px;
+          left: 0px;
+          border-top-right-radius: 100px;
+        }
+        .box--bottom-right {
+          bottom: 0px;
+          right: 0px;
+          border-top-left-radius: 100px;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="box"></div>
+    </div>
+    <div class="box--top-left"></div>
+    <div class="box--top-right"></div>
+    <div class="box--bottom-left"></div>
+    <div class="box--bottom-right"></div>
+</body>
+</html>
