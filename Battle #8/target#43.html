@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrench</title>
+      <style>
+        body {
+          background: #6592CF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .half-circle__left, .half-circle__right {
+          background: transparent;
+          width: 182px;
+          height: 40px;
+          border-top-left-radius: 300px;
+          border-top-right-radius: 300px;
+          border: 30px solid #243D83;
+          border-bottom: 0;
+        }
+        .half-circle__left {
+          transform: translate(-20px, 36px) rotate(90deg);
+        }
+        .half-circle__right {
+          transform: translate(20px, -34px) rotate(-90deg);
+        }
+        
+      </style>
+</head>
+<body>
+    <div>
+        <div class="half-circle__left"></div>
+        <div class="half-circle__right"></div>
+    </div>
+</body>
+</html>
