@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skull</title>
+      <style>
+        body {
+          background: #191919;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .skull {
+          background: #4F77FF;
+          width: 120px;
+          height: 100px;
+          border-radius: 70px 70px 10px 10px;
+          transform: translateY(-15px);
+        }
+        .eyes {
+          transform: translate(12px, -7px);
+        }
+        .eye--left, .eye--right {
+          background: #191919;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 3px;
+        }
+        .jaw {
+          background: #4F77FF;
+          width: 80px;
+          height: 60px;
+          transform: translate(20px, 70px);
+          border-radius: 20px;
+        }
+        .jaw > * {
+          background: #191919;
+          width: 10px;
+          height: 20px;
+          display: inline-block;
+          transform: translate(19px, 50px);
+          border-radius: 5px;
+          margin: 0 0.5px;
+        }
+        .nose {
+          background: #191919;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          transform: translate(50px, -13px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="skull">
+          <div class="jaw">
+            <div class="tooth-1"></div>
+            <div class="tooth-1"></div>
+            <div class="tooth-1"></div>
+          </div>
+          <div class="eyes">
+              <div class="eye--left"></div>
+              <div class="eye--right"></div>
+          </div>
+          <div class="nose"></div>
+        </div>
+      </div>
+</body>
+</html>
