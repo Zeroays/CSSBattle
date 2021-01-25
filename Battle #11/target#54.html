@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Lives Matter</title>
+      <style>
+        body {
+          background: #F9E492;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .fist {
+          background: #191919;
+          width: 100px;
+          height: 40px;
+          border-radius: 0 0 10px 10px;
+          transform: translateY(8px);
+        }
+        .arm {
+          background: #191919;
+          width: 50px;
+          height: 55px;
+          border-radius: 10px;
+          transform: translate(25px, 30px);
+        }
+        .fingers {
+          transform: translate(5px, -120px);
+        }
+        .fingers > * {
+          background: #191919;
+          width: 20px;
+          border-radius: 20px;
+          display: inline-block;
+        }
+        .finger--index {
+          height: 45px;
+        }
+        .finger--middle {
+          height: 60px;
+          transform: translate(1px, 5px);
+        }
+        .finger--ring {
+          height: 45px;
+          transform: translateX(2px);
+        }
+        .finger--pinky {
+          height: 35px;
+          transform: translateX(3px);
+        }
+        .thumb {
+          background: #191919;
+          width: 65px;
+          height: 20px;
+          border-radius: 40px;
+          border: 5px solid #F9E492;
+          transform: translate(-20px, -130px) rotate(-30deg);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="fist">
+            <div class="arm"></div>
+          <div class="fingers">
+            <div class="finger--index"></div>
+            <div class="finger--middle"></div>
+            <div class="finger--ring"></div>
+            <div class="finger--pinky"></div>
+          </div>
+          <div class="thumb"></div>
+        </div>
+      </div>
+</body>
+</html>
