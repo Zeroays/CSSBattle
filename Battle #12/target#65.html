@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Volume</title>
+      <style>
+        body {
+          background: #191919;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .speaker {
+          background: #5DBCF9;
+          width: 0;
+          height: 0;
+          border-left: 100px solid #191919;
+          border-right: 100px solid #191919;
+          border-bottom: 100px solid #5DBCF9;
+          transform: translateX(-50px) rotate(-90deg);
+        }
+        .speaker__handle {
+          background: #5DBCF9;
+          width: 50px;
+          height: 100px;
+          border-radius: 10px;
+          transform: translate(-25px, -25px);
+        }
+        .sound--sm, .sound--md, .sound--lg {
+          background: rgba(0, 0, 0, 0);
+          
+        }
+        .sound--sm {
+          border: 10px solid #5DBCF9;
+          width: 80px;
+          height: 40px;
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          border-bottom: 0;
+          transform: rotate(180deg) translate(50px, -25px);
+        }
+        .sound--md {
+          border: 10px solid #5DBCF9;
+          width: 130px;
+          height: 65px;
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          border-bottom: 0;
+          transform: rotate(180deg) translate(75px, 25px);
+        }
+        .sound--lg {
+          border: 10px solid #5DBCF9;
+          width: 180px;
+          height: 90px;
+          border-top-left-radius: 100px;
+          border-top-right-radius: 100px;
+          border-bottom: 0;
+          transform: rotate(180deg) translate(100px, 100px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="speaker">
+            <div class="speaker__handle"></div>
+            <div class="sound--sm"></div>
+            <div class="sound--md"></div>
+            <div class="sound--lg"></div>
+        </div>
+    </div>  
+</body>
+</html>
