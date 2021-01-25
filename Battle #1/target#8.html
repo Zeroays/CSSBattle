@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forking Crazy</title>
+      <style>
+        body {
+          background:#6592CF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .fork {
+          background: #060F55;
+          width: 140px;
+          height: 100px;
+          border-radius: 0 0 75px 75px;
+          transform: translateY(50px);
+        }
+        .fork__handle {
+          background: #060F55;
+          width: 20px;
+          height: 100px;
+          transform: translate(60px, 50px);
+        }
+        .tines {
+          display: flex;
+          justify-content: space-between;
+          transform: translateY(-200px);
+        }
+        .fork__tine {
+          background: #060F55;
+          width: 20px;
+          height: 120px;
+          border-radius: 10px 10px 0 0;
+        }
+        .slots {
+          display: flex;
+          justify-content: space-around;
+          padding: 10px;
+          transform: translateY(-340px);
+        }
+        .fork__slot {
+          background: #6592CF;
+          width: 20px;
+          height: 120px;
+          border-radius: 0 0 10px 10px;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="fork">
+            <div class="fork__handle"></div>
+          <div class="tines">
+              <div class="fork__tine"></div>
+              <div class="fork__tine"></div>
+              <div class="fork__tine"></div>
+              <div class="fork__tine"></div>
+          </div>
+          <div class="slots">
+            <div class="fork__slot"></div>
+            <div class="fork__slot"></div>
+            <div class="fork__slot"></div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
