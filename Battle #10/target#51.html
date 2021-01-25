@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wear a Mask</title>
+      <style>
+        body {
+          background: #293462;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .mask {
+          background: #FFF1C1;
+          width: 150px;
+          height: 100px;
+          border-radius: 0 0 50px 50px;
+          position: relative;
+        }
+        .slots {
+          display: flex;
+          flex-direction: column;
+          width: 40px;
+          transform: translate(20px, -105px);
+        }
+        .slot-1, .slot-2 {
+          background: #FE5F55;
+          width: 40px;
+          height: 10px;
+          border-radius: 5px;
+          margin: 5px 0;
+        }
+        .vent {
+          background: #FE5F55;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          transform: translate(90px, -120px);
+        }
+        .strap--left, .strap--right {
+          background: transparent;
+          width: 100px;
+          height: 40px;
+          border: 10px solid #FFF1C1;
+          border-radius: 50px;
+        }
+        .strap--left {
+          transform: translateX(-60px);
+        }
+        .strap--right {
+          transform: translate(90px, -60px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="mask">
+          <div class="strap--left"></div>
+          <div class="strap--right"></div>
+          <div class="slots">
+              <div class="slot-1"></div>
+              <div class="slot-2"></div>
+          </div>
+          <div class="vent"></div>
+          
+        </div>
+      </div>
+</body>
+</html>
