@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Hand Sanitizer</title>
+      <style>
+        body {
+          background: #1A4341;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .bottle {
+          background: #F3AC3C;
+          width: 100px;
+          height: 140px;
+          border-radius: 20px;
+          transform: translateY(30px);
+          position: relative;
+        }
+        .bottle__solution {
+          background: #998235;
+          width: 100px;
+          height: 80px;
+          position: absolute;
+          bottom: 0;
+          border-radius: 0 0 20px 20px;
+        }
+        .swirl--left {
+          background: #998235;
+          width: 50px;
+          height: 55px;
+          border-radius: 25px;
+          transform: translateY(-30px);
+        }
+        .swirl--right {
+          background: #F3AC3C;
+          width: 50.5px;
+          height: 55px;
+          border-radius: 28px;
+          transform: translate(49.5px,-90px);
+        }
+        .bottle__collar {
+          background: #F3AC3C;
+          width: 50px;
+          height: 20px;
+          border-radius: 10px 10px 0 0;
+          transform: translate(25px, -20px);
+        }
+        .bottle__neck {
+          background: #F3AC3C;
+          width: 20px;
+          height: 40px;
+          transform: translate(40px, -60px);
+        }
+        .bottle__tube {
+          background: #F3AC3C;
+          width: 145px;
+          height: 20px;
+          border-radius: 20px;
+          transform: translate(0, -120px);
+        }
+        .bottle__tube--exit {
+          background: #F3AC3C;
+          width: 20px;
+          height: 40px;
+          transform: translate(130px);
+          border-radius: 10px;
+        }
+        .drop {
+          background: #998235;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          transform: translateY(50px);
+          margin-bottom: 10px;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="bottle">
+          <div class="bottle__solution">
+            <div class="swirl--left"></div>
+            <div class="swirl--right"></div>
+          </div>
+          <div class="bottle__collar"></div>
+          <div class="bottle__neck"></div>
+          <div class="bottle__tube">
+            <div class="bottle__tube--exit">
+                <div class="drop"></div>
+              <div class="drop"></div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
