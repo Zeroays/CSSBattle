@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Tree</title>
+      <style>
+        body {
+          background: #007065;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .triangle__tp, .triangle__md, .triangle__btm {
+          width: 0;
+          height: 0;
+          border-left: 125px solid transparent;
+          border-right: 125px solid transparent;
+        }
+        .triangle__tp {
+          border-bottom: 100px solid #FFEECF;
+          transform: translateY(-158px);
+        }
+        .triangle__md {
+          border-bottom: 100px solid #F5C181;
+          transform: translateY(-8px);
+        }
+        .triangle__btm {
+          border-bottom: 100px solid #00A79D;
+          transform: translateY(142px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="triangle__btm"></div>
+        <div class="triangle__md"></div>
+        <div class="triangle__tp"></div>
+    </div>
+</body>
+</html>
