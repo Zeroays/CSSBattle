@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye of Sauron</title>
+      <style>
+        body {
+          background: #191210;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .eye {
+          background: transparent;
+          border: 20px solid #ECA03D;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+        .eye__pupil {
+          background: #84271C;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+        .half-circle__left {
+          background: transparent;
+          border: 20px solid #ECA03D;
+          border-bottom: 0;
+          width: 60px;
+          height: 30px;
+          border-top-left-radius: 130px;
+          border-top-right-radius: 130px;
+          position: absolute;
+          transform: translate(-80px, -70px) rotate(180deg);
+        }
+        .half-circle__right {
+          background: transparent;
+          border: 20px solid #ECA03D;
+          border-bottom: 0;
+          width: 60px;
+          height: 30px;
+          border-top-left-radius: 130px;
+          border-top-right-radius: 130px;
+          position: absolute;
+          transform: translate(120px, -120px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="eye">
+          <div class="eye__pupil"></div> 
+        </div>
+        <div class="half-circle__left"></div>
+        <div class="half-circle__right"></div>
+    </div>
+</body>
+</html>
