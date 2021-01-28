@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band-aid</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .band-aid {
+          position: relative;
+        }
+        .rect-left, .rect-right{
+          width: 200px;
+          height: 50px;
+        }
+        .rect-right {
+          position: absolute;
+          transform: rotate(-45deg);
+          background: #A3A368;
+        }
+        .rect-left{ 
+          transform: rotate(45deg);
+            background: #F3AC3C;
+        }
+        .rect-center {
+          position: absolute;
+          background: #FBE18C;
+          width: 50px;
+          height: 50px;
+          transform: translate(75px, -50px) rotate(45deg);
+        }
+      </style>
+</head>
+<body>
+    <div class="band-aid">
+        <div class="rect-right"></div>
+        <div class="rect-left"></div>
+        <div class="rect-center"></div>
+    </div>
+</body>
+</html>
