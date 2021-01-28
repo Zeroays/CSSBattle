@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interleaved</title>
+      <style>
+        body {
+          margin: 0 25px;
+          padding: 0;
+          background: #1A4341;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .interleaved {
+          display: flex;
+          justify-content: space-between;
+          width: 400px;
+        }
+        .stick {
+          width: 50px;
+          height: 250px;
+          border-radius: 25px 25px 0 0;
+        }
+        .face-up {
+          background: #F3AC3C;
+          transform: translateY(75px);
+        }
+        .face-down {
+          background: #998235;
+          transform: translateY(-75px) rotate(180deg);
+        }
+      </style>
+</head>
+<body>
+    <div class="interleaved">
+        <div class="stick face-up"></div>
+        <div class="stick face-down"></div>
+        <div class="stick face-up"></div>
+        <div class="stick face-down"></div>
+        <div class="stick face-up"></div>
+    </div>
+</body>
+</html>
