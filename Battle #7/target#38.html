@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Simply Square</title>
+      <style>
+        body {
+          background: #293462;
+          margin: 0;
+          padding: 0;
+        }
+        .top-box {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #FFF1C1;
+          width: 200px;
+          height: 200px;
+        }
+        .rect {
+          background: #FE5F55;
+          width: 200px;
+          height: 100px;
+          position: relative;
+        }
+        .rect__top {
+          position: absolute;
+          background: #A64942;
+          width: 50px;
+          height: 100px;
+          right: 0;
+        }
+        .rect.top {
+          transform: translate(150px, 50px) rotate(90deg);
+        }
+        .rect.bottom {
+          transform: translateY(100px);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="top-box"></div>
+        <div class="rect top">
+          <div class="rect__top"></div>
+        </div>
+        <div class="rect bottom">
+          <div class="rect__top"></div>
+        </div>    
+    </div>
+</body>
+</html>
