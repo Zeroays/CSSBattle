@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lock Up</title>
+      <style>
+        body {
+          background: #E38F66;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .circle {
+          background: #AA445F;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+        .half-circle {
+          width: 40px;
+          height: 40px;
+          background: transparent;
+          border-radius: 0 80px 0 0;
+          border: 30px solid #F7EC7D;
+          border-left: 0;
+          border-bottom: 0;
+          position: absolute;
+        }
+        .half-circle.top {
+          transform: translate(100px, 30px);
+        }
+        .half-circle.bottom {
+          transform: translate(30px, 100px) rotate(180deg);
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="circle">
+          <div class="half-circle top"></div>
+          <div class="half-circle bottom"></div>
+        </div>
+    </div>
+</body>
+</html>
