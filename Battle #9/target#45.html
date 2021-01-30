@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Tree</title>
+      <style>
+        body {
+          background: #1A4341;
+          display: flex;
+          justify-content: center;
+        }
+        .tree > * {
+          position: absolute;
+        }
+        .tree__base {
+          background: #998235;
+          width: 270px;
+          height: 30px;
+          top: 240px;
+          left: 65px;
+        }
+        .tree__body {
+          background: #F3AC3C;
+          width: 30px;
+          height: 310px;
+          top: 0;
+          left: 185px;
+        }
+        .tree__branch-base-1, .tree__branch-1-left, .tree__branch-1-right {
+          background: #F3AC3C;
+          width: 30px;
+          height: 270px;
+        }
+        .tree__branch-base-1 {
+          top: 60px;
+          left: 185px;
+          transform: rotate(90deg);
+        }
+        .tree__branch-1-left {
+          top: -60px;
+          left: 65px;
+        }
+        .tree__branch-1-right {
+          top: -60px;
+          left: 305px;
+        }
+        .tree__branch-base-2, .tree__branch-2-left, .tree__branch-2-right {
+          background: #998235;
+          width: 150px;
+          height: 30px;
+        }
+        .tree__branch-base-2 {
+          top: 120px;
+          left: 125px;
+        }
+        .tree__branch-2-left {
+          transform: rotate(90deg);
+            top: 30px;
+          left: 65px;
+        }
+        .tree__branch-2-right {
+          transform: rotate(90deg);
+            top: 30px;
+          left: 185px;
+        }
+      </style>
+</head>
+<body>
+    <div class="tree">
+        <div class="tree__base"></div>
+        <div class="tree__branch-base-2"></div>
+        <div class="tree__branch-2-left"></div>
+        <div class="tree__branch-2-right"></div>
+        <div class="tree__body"></div>
+        <div class="tree__branch-base-1"></div>
+        <div class="tree__branch-1-left"></div>
+        <div class="tree__branch-1-right"></div>
+    </div>
+</body>
+</html>
