@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acid Rain</title>
+    <style>
+      body {
+        background: #0B2429;
+      }
+      .raindrop {
+        width: 120px;
+        height: 120px;
+        border-radius: 50% 0 50% 50%;
+        position: absolute;
+      }
+      .raindrop.yellow {
+        background: #F3AC3C;
+      }
+      .raindrop.green {
+        background: #998235;
+      }
+      .raindrop.yellow.btm {
+        top: 150px;
+        left: 80px;
+      }
+      .raindrop.yellow.top {
+        top: 30px;
+        left: 200px;
+        transform: rotate(180deg);
+      }
+      .raindrop.green {
+        top: 90px;
+        left: 140px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div>
+        <div class="raindrop yellow top"></div>
+        <div class="raindrop green"></div>
+        <div class="raindrop yellow btm"></div>
+    </div>
+</body>
+</html>
