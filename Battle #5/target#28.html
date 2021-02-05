@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cups and Balls</title>
+      <style>
+        body {
+          background: #1A4341;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+        }
+        .circle, .slot {
+          width: 50px;
+          height: 50px;
+          margin: 6px 8px;
+          display: inline-block;
+        }
+        .row-1 {
+          transform: translateY(4px);
+        }
+        .row-2 {
+          padding-top: 8px;
+        }
+        .row-2 > .slot {
+          transform: rotate(180deg);
+        }
+        .circle {
+          border-radius: 50%;
+        }
+        .slot {
+          border-radius: 50% 50% 0 0; 
+        }
+        .green {
+          background: #998235;
+        }
+        .yellow {
+          background: #F3AC3C;
+        }
+      </style>
+</head>
+<body>
+    <div class="cup-and-balls">
+        <div class="row-1">
+          <div class="circle green"></div>
+          <div class="slot yellow"></div>
+          <div class="slot green"></div>
+          <div class="circle yellow"></div>
+         </div>
+        <div class="row-2">
+          <div class="slot yellow"></div>
+          <div class="circle green"></div>
+          <div class="circle yellow"></div>
+          <div class="slot green"></div>
+        </div>
+    </div>
+</body>
+</html>
