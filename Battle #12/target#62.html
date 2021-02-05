@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset</title>
+      <style>
+        body {
+          background: #191919;
+          margin: 0;
+        }
+        div {
+          display: flex;
+          justify-content: center;
+        }
+        .photo-frame {
+          position: relative;
+          margin-top: 50px;
+          background: #F2AD43;
+          width: 150px;
+          height: 200px;
+          border-radius: 70px 70px 20px 20px;
+          overflow: hidden;
+        }
+        .photo-frame__sun {
+          position: absolute;
+          top: 90px;
+          background: #FFF58F;
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+        }
+        .photo-frame__valley-left {
+          position: absolute;
+          top: 105px;
+          background: #E08027;
+          border-radius: 50%;
+          left: -60px;
+          width: 150px;
+          height: 150px;
+        }
+        .photo-frame__valley-right {
+          position: absolute;
+          top: 105px;
+          background: #824B20;
+          border-radius: 50%;
+          left: 60px;
+          width: 150px;
+          height: 150px;
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <div class="photo-frame">
+            <div class="photo-frame__sun"></div>
+            <div class="photo-frame__valley-left"></div>
+            <div class="photo-frame__valley-right"></div>
+        </div>
+    </div>
+</body>
+</html>
