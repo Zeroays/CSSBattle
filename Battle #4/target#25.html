@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom</title>
+      <style>
+        body {
+          background: #998235;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .blossom {
+          display: grid;
+          grid-template-areas: 
+            "leaf--lg-top leaf--sm-top"
+            "leaf--lg-top leaf--lg-bottom"
+            "leaf--sm-bottom leaf--lg-bottom";
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+         gap: 0px 20px;
+        }
+        .leaf--lg {
+          background: #1A4341;
+          width: 80px;
+          height: 100px;
+          border-radius: 0 50px 0 50px;
+        }
+        .leaf--lg.top {
+          grid-area: leaf--lg-top;
+        }
+        .leaf--lg.bottom {
+          grid-area: leaf--lg-bottom;
+          transform: translateY(20px) scaleX(-1);
+        }
+        .leaf--sm {
+          grid-area: leaf--sm;
+          background: #F3AC3C;
+          width: 80px;
+          height: 60px;
+          border-radius: 50px 0 50px 0;
+        }
+        .leaf--sm.top {
+          grid-area: leaf--sm-top;
+        }
+        .leaf--sm.bottom {
+          grid-area: leaf--sm-bottom;
+          transform: scaleX(-1);
+        }
+      </style>
+</head>
+<body>
+    <div class="blossom">
+        <div class="leaf--sm top"></div>
+        <div class="leaf--sm bottom"></div>
+        <div class="leaf--lg top"></div>
+        <div class="leaf--lg bottom"></div>
+    </div>
+</body>
+</html>
