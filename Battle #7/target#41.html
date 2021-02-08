@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Head</title>
+      <style>
+        body {
+          background: #293462;
+          margin: 0 auto;
+        }
+        .fox-head {
+          transform: translate(150px, 80px);
+          position: relative;
+        }
+        .head {
+          background: #FE5F55;
+          width: 50px;
+          height: 135px;
+          border-radius: 0 40px 0 0;
+          position: absolute;
+        }
+        .head.right {
+          transform: translate(50px) scaleX(-1);
+        }
+        .eye {
+          position: absolute;
+          background: #293462;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .eye.left {
+          transform: translate(15px, 60px);
+        }
+        .eye.right {
+          transform: translate(55px, 60px);
+        }
+        .jaw-cutout {
+          position: absolute;
+          background: #293462;
+          width:50px;
+          height: 50px;
+          border-radius: 0 40px 0 0;
+        }
+        .jaw-cutout.left {
+          transform: translate(0, 100px);
+        }
+        .jaw-cutout.right {
+          transform: translate(50px, 100px) scaleX(-1);
+        }
+      </style>
+</head>
+<body>
+    <div class="fox-head">
+        <div class="head left"></div>
+        <div class="head right"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="jaw-cutout left"></div>
+        <div class="jaw-cutout right"></div>
+    </div>
+</body>
+</html>
